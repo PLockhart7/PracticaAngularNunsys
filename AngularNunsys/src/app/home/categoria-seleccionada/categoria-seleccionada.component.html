@@ -1,0 +1,10 @@
+<div class="p-5">
+    <a [routerLink]="['']">Tienda</a> &gt; <span>{{categoriaNombre}}</span>
+</div>
+<h1 class="ps-4">{{categoriaNombre}}</h1>
+<div class="row mb-5">
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4" *ngFor="let producto of productos">
+        <app-productos-categoria [producto]="producto" [categoriaId]="categoriaId"></app-productos-categoria>
+    </div>
+</div>
+
